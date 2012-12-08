@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implementation of hook_install().
+ */
+/*
+function highlighting_install() {
+	$format_exists = db_result(db_query("SELECT COUNT(*) FROM {filter_formats} WHERE name = 'Highlight'"));
+	if (!$format_exists) {
+		db_query("INSERT INTO {filter_formats} (name, roles, cache) VALUES ('Highlight', '', 0)");
+		$format = db_result(db_query("SELECT MAX(format) FROM {filter_formats}"));
+		
+		// Enable the Highlight filter.
+		db_query("INSERT INTO {filters} (format, module, delta, weight) VALUES (%d, 'highlighting', 0, 0)", $format);
+		
+		drupal_set_message(t('A !highlighting input format has been created.', array('!highlighting' => l('Highlight', 'admin/settings/filters/'. $format))));
+	}
+}
+*/

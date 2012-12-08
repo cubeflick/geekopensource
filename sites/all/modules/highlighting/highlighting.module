@@ -1,0 +1,53 @@
+<?php
+
+/**
+ * Implements hook_filter_info().
+ */
+function highlighting_filter_info() {
+	$filters = array();
+	$filters['highlighting'] = array(
+		'title' => t('Syntax Highlighting'),
+		'description' => t('Allows syntax highlighting of source code snippets.'),
+		'process callback' => '_highlighting_filter_process',
+		'tips callback' => '_highlighting_filter_tips',
+		'weight' => -1,
+	);
+	return $filters;
+}
+
+function _highlighting_filter_tips($filter, $format, $long = FALSE) {
+	return t('Allows syntax highlighting of source code snippets.');
+}
+
+function _highlighting_filter_process($text, $filter, $format, $langcode, $cache = 0, $cache_id) {
+	$path = drupal_get_path('module', 'highlighting');
+	drupal_add_css($path.'/css/highlight.css');
+    drupal_add_js($path.'/js/highlight.js');
+	return preg_replace_callback('/<pre\s+.*class\s*=\"code\">(.*)<\/pre>/siU',
+								 'highlighting_parse_code',
+								 $text);
+}
+
+function highlighting_parse_code($matches) {  
+	$code = $matches[0];	
+	$code = str_replace('<', '&lt;', $code);
+	$html_entities_match = array( '&lt;pre', '&lt;/pre');
+	$html_entities_replace = array( '<pre', '</pre');
+	$code = str_replace($html_entities_match, $html_entities_replace, $code);
+	return $code;
+}
+
+/**
+ * Implementation of hook_preprocess_page().
+ */
+function highlighting_preprocess_page(&$vars) {
+	if(!empty($vars['node'])) {
+		if(!empty($vars['node']->body)) {
+			if(strpos($vars['node']->body[$vars['node']->language][0]['safe_value'], '<pre class="code"')!==false) {
+				$path = drupal_get_path('module', 'highlighting');
+				drupal_add_css($path.'/css/highlight.css');
+			    drupal_add_js($path.'/js/highlight.js');
+			}
+		}
+	}
+}
