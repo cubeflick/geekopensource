@@ -80,13 +80,13 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .meta-data { font-size:75%; text-transform:uppercase; color:#545454; margin:5px 0 20px 0; display:block; overflow:hidden; clear:both; }
 
-#footer { clear:both; overflow:hidden; padding:20px 0 50px 0;}
+#footer { clear:both; overflow:hidden; padding:25px 0 25px 0;}
 
 #footer-inside { width: 960px; margin: 0 auto; } 
 
 .footer-area { width:280px; float:left; padding:0 50px 0 0; }
 
-.footer-area.first { width:280px;}
+.footer-area.first { width:311px; }
 
 .footer-area.second { width:300px; }
 
@@ -235,13 +235,19 @@ font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica
 #header-menu ul.menu li.expanded ul ul { display: none; left: 230px; top:0; padding:0; }
 
 /* Footer menu */
-#footer .block ul.menu { margin: 0; padding: 0; }
+#footer .block ul.menu {display:block; padding:0; margin:0; position:relative; z-index:100; }
 
 #footer .block ul.menu ul.menu { margin: 0 0 0 15px; }
 
-#footer .block ul.menu li { list-style:none; margin:0; padding:0; list-style-image:none; }
+#footer .block ul.menu li { display:inline-block; float:left; vertical-align: middle; padding:0; margin:0; }
 
-#footer .block ul.menu li a { display: block; padding:5px; }
+#footer .block ul.menu li a { outline:none; text-decoration: none; margin:0 35px 0 0; font-size:14px; font-weight:normal; text-align:center; text-transform:uppercase; 
+font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; display:block;}
+
+#footer .block ul.menu li a:hover, #footer .block ul.menu li a.active { color:#1487d4; }
+
+#footer .block ul.menu li a:after { content: none; }
+
 
 /* 
 * Footer-bottom menu 
