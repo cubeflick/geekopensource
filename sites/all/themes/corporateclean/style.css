@@ -101,6 +101,15 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 #footer-bottom-left { float:left; width: 620px; padding:0 60px 0 0; margin:0; }
 
 #footer-bottom-right { float:left; width: 280px; padding:0; }
+.block-social-media-links h2{  
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 11px 3px 0 -31px;
+     color: #7A7A7A;
+}
+
 
 /*
 * Sidebar Blocks - Menus
@@ -574,3 +583,23 @@ ul.pager {
 .pager a:hover {
     border: 1px solid #0E509E;
 }
+.easy_social_box {
+  	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    padding: 5px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    width: 60px;
+    left: 50px;
+    top: 100px;
+    
+}
+div.easy_social_box.vertical {
+    height: 265px;
+}
+.easy_social_box.vertical div.easy_social-widget {
+    height: 67px;
+    width: 58px;
+}
+
