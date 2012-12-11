@@ -344,7 +344,7 @@ font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans
 /*
 * Search
 */
-#block-search-form { background:#e8e8e8; border:none; overflow:hidden;
+#block-search-form { background:#e8e8e8; border:none; overflow:hidden; margin: 15px 0 0;
 /* Radius */
  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  /* shadow */
@@ -603,7 +603,11 @@ div.easy_social_box.vertical {
     width: 58px;
 }
 
+<<<<<<< HEAD
 .field-name-taxonomy-vocabulary-2
 {
 	display: none;
 }
+=======
+
+>>>>>>> 78e25d714cd4a7454529f1745a1c4cb4e4bfb86e
