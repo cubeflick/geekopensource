@@ -344,7 +344,7 @@ font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans
 /*
 * Search
 */
-#block-search-form { background:#e8e8e8; border:none; overflow:hidden;
+#block-search-form { background:#e8e8e8; border:none; overflow:hidden; margin: 15px 0 0;
 /* Radius */
  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  /* shadow */
@@ -602,13 +602,5 @@ div.easy_social_box.vertical {
     height: 67px;
     width: 58px;
 }
-#header #block-search-form{
-	 margin: 15px 0 0;
-}
-#block-search-form{	
-	background: none repeat scroll 0 0 #E8E8E8;
-    border: medium none;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 2px 5px #C8C8C8 inset;
-    overflow: hidden;
-}
+
+
