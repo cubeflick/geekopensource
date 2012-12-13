@@ -449,7 +449,7 @@ ul.tabs li { padding:10px 0; line-height:130%; }
 ol.search-results { padding:0; }
 
 .links ul li a, a.more, #edit-submit, #edit-preview, input.form-submit { color:#fefefe; padding:7px 15px; text-shadow: 0 1px 1px #003547; font-weight:bold; border:none;
-font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; cursor:pointer;
+font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; cursor:pointer; ma
 /* radius */
 -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; 
 /* shadow */
@@ -608,6 +608,9 @@ div.easy_social_box.vertical {
 {
 	display: none;
 }
-
-
-
+ 
+.field-name-taxonomy-vocabulary-1 .field-item
+{
+	float: left;
+	margin-right: 10px;
+}
