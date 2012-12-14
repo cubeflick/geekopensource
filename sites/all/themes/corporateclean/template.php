@@ -35,12 +35,12 @@ function corporateclean_process_page(&$variables) {
   }
 
 //  if (arg(0) == 'portfolio') {
-  	drupal_add_css(drupal_get_path('theme', 'corporateclean') . '/prettyPhoto.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
-  	drupal_add_css(drupal_get_path('theme', 'corporateclean') . '/portfolio.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
-  	drupal_add_js('/misc/jquery.prettyPhoto.js', 'file');
-  	drupal_add_js('/misc/jquery.quicksand.js', 'file');
-	drupal_add_js('/misc/jquery.easing.1.3.js', 'file');
-  	drupal_add_js('/misc/script_portfolio.js', 'file');
+//  	drupal_add_css(drupal_get_path('theme', 'corporateclean') . '/prettyPhoto.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+//  	drupal_add_css(drupal_get_path('theme', 'corporateclean') . '/portfolio.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+//  	drupal_add_js('/misc/jquery.prettyPhoto.js', 'file');
+//  	drupal_add_js('/misc/jquery.quicksand.js', 'file');
+//	drupal_add_js('/misc/jquery.easing.1.3.js', 'file');
+//  	drupal_add_js('/misc/script_portfolio.js', 'file');
 //  }
   
 }
