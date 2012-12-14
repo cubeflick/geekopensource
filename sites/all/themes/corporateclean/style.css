@@ -614,3 +614,8 @@ div.easy_social_box.vertical {
 	float: left;
 	margin-right: 10px;
 }
+
+.easy_social_box .easy_social-widget-facebook
+{
+	height:65px;
+}
