@@ -106,7 +106,7 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
     float: left;
     font-size: 14px;
     list-style-type: none;
-    margin: 11px 3px 0 -31px;
+    margin: 4px 16px 0 -31px;
      color: #7A7A7A;
 }
 
@@ -586,7 +586,7 @@ ul.pager {
 .easy_social_box {
   	background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 8px 8px 8px 8px;
-    padding: 5px;
+    padding: 7px;
     position: fixed;
     text-align: center;
     z-index: 1;
@@ -602,13 +602,22 @@ div.easy_social_box.vertical {
     height: 67px;
     width: 58px;
 }
-.field-name-taxonomy-vocabulary-2
+.field-name-taxonomy-vocabulary-1
 {
 	display: none;
 }
  
-.field-name-taxonomy-vocabulary-1 .field-item
+.field-name-taxonomy-vocabulary-2 .field-item
 {
 	float: left;
 	margin-right: 10px;
+}
+.links .blog_usernames_blog {
+	display: none;
+}
+.content .social-media-links li{
+	padding: 3px 1.5px;
+}
+.easy_social_lang_en div.easy_social-widget-facebook{
+	height: 72px;
 }
