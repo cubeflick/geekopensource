@@ -80,13 +80,13 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 
 .meta-data { font-size:75%; text-transform:uppercase; color:#545454; margin:5px 0 20px 0; display:block; overflow:hidden; clear:both; }
 
-#footer { clear:both; overflow:hidden; padding:20px 0 50px 0;}
+#footer { clear:both; overflow:hidden; padding:25px 0 25px 0;}
 
 #footer-inside { width: 960px; margin: 0 auto; } 
 
 .footer-area { width:280px; float:left; padding:0 50px 0 0; }
 
-.footer-area.first { width:280px;}
+.footer-area.first { width:311px; }
 
 .footer-area.second { width:300px; }
 
@@ -101,6 +101,15 @@ blockquote { background:transparent url('images/blockquote.png') no-repeat top l
 #footer-bottom-left { float:left; width: 620px; padding:0 60px 0 0; margin:0; }
 
 #footer-bottom-right { float:left; width: 280px; padding:0; }
+.block-social-media-links h2{  
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 4px 16px 0 -31px;
+     color: #7A7A7A;
+}
+
 
 /*
 * Sidebar Blocks - Menus
@@ -235,13 +244,19 @@ font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica
 #header-menu ul.menu li.expanded ul ul { display: none; left: 230px; top:0; padding:0; }
 
 /* Footer menu */
-#footer .block ul.menu { margin: 0; padding: 0; }
+#footer .block ul.menu {display:block; padding:0; margin:0; position:relative; z-index:100; }
 
 #footer .block ul.menu ul.menu { margin: 0 0 0 15px; }
 
-#footer .block ul.menu li { list-style:none; margin:0; padding:0; list-style-image:none; }
+#footer .block ul.menu li { display:inline-block; float:left; vertical-align: middle; padding:0; margin:0; }
 
-#footer .block ul.menu li a { display: block; padding:5px; }
+#footer .block ul.menu li a { outline:none; text-decoration: none; margin:0 35px 0 0; font-size:14px; font-weight:normal; text-align:center; text-transform:uppercase; 
+font-family: Myriad Pro,"Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; display:block;}
+
+#footer .block ul.menu li a:hover, #footer .block ul.menu li a.active { color:#1487d4; }
+
+#footer .block ul.menu li a:after { content: none; }
+
 
 /* 
 * Footer-bottom menu 
@@ -329,7 +344,7 @@ font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans
 /*
 * Search
 */
-#block-search-form { background:#e8e8e8; border:none; overflow:hidden;
+#block-search-form { background:#e8e8e8; border:none; overflow:hidden; margin: 15px 0 0;
 /* Radius */
  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
  /* shadow */
@@ -434,7 +449,7 @@ ul.tabs li { padding:10px 0; line-height:130%; }
 ol.search-results { padding:0; }
 
 .links ul li a, a.more, #edit-submit, #edit-preview, input.form-submit { color:#fefefe; padding:7px 15px; text-shadow: 0 1px 1px #003547; font-weight:bold; border:none;
-font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; cursor:pointer;
+font-family: "Lucida Grande","Lucida Sans Unicode",Segoe UI,Helvetica,Arial,sans-serif; cursor:pointer; ma
 /* radius */
 -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; 
 /* shadow */
@@ -567,4 +582,42 @@ ul.pager {
 }
 .pager a:hover {
     border: 1px solid #0E509E;
+}
+.easy_social_box {
+  	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 8px 8px 8px 8px;
+    padding: 7px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    width: 60px;
+    left: 50px;
+    top: 100px;
+    
+}
+div.easy_social_box.vertical {
+    height: 265px;
+}
+.easy_social_box.vertical div.easy_social-widget {
+    height: 67px;
+    width: 58px;
+}
+.field-name-taxonomy-vocabulary-1
+{
+	display: none;
+}
+ 
+.field-name-taxonomy-vocabulary-2 .field-item
+{
+	float: left;
+	margin-right: 10px;
+}
+.links .blog_usernames_blog {
+	display: none;
+}
+.content .social-media-links li{
+	padding: 3px 1.5px;
+}
+.easy_social_lang_en div.easy_social-widget-facebook{
+	height: 72px;
 }
