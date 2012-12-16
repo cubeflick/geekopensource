@@ -612,8 +612,6 @@ div.easy_social_box.vertical {
 	float: left;
 	margin-right: 10px;
 }
-<<<<<<< HEAD
-
 .easy_social_box .easy_social-widget-facebook
 {
 	height:65px;
@@ -626,5 +624,7 @@ div.easy_social_box.vertical {
 }
 .easy_social_lang_en div.easy_social-widget-facebook{
 	height: 72px;
-
+}
+#content-inside #main h1{
+	display: none;
 }
